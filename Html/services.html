@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebRock.in:Services</title>
+    <link rel="shortcut icon" type="image" href="img/webrock.png">
+    <script src="https://kit.fontawesome.com/ae834503ac.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins';
+        }
+        
+        .container {
+            width: 100%;
+            height: 100vh;
+            padding: 0 8%;
+        }
+        
+        .container h1 {
+            text-align: center;
+            padding-top: 10%;
+            margin-bottom: 60px;
+            font-weight: 600;
+            position: relative;
+        }
+        
+        .container h1::after {
+            content: '';
+            background: #303ef7;
+            width: 100px;
+            height: 5px;
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        .row {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-gap: 30px;
+        }
+        
+        .services {
+            text-align: center;
+            padding: 25px 10px;
+            border-radius: 5px;
+            font-size: 14px;
+            cursor: pointer;
+            background: transparent;
+            transition: transform 0.5s, background 0.5s;
+        }
+        
+        .services i {
+            font-size: 40px;
+            margin-bottom: 10px;
+            color: #303ef7;
+        }
+        
+        .services h2 {
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        
+        .services:hover {
+            background: #303ef7;
+            color: #fff;
+            transform: scale(1.05);
+        }
+        
+        .services:hover i {
+            color: #fff;
+        }
+    </style>
+
+</head>
+
+<body>
+    <button><a href="./index.html"><img src="img/leftA.png" alt="" width="10px
+        "></a></button>
+    <div class="container">
+        <h1>Our Services</h1>
+        <div class="row">
+            <div class="services">
+                <i class="fa-solid fa-laptop-code"></i>
+                <h2>Web Development</h2>
+                <p>Web Development is a Developing frontend design</p>
+            </div>
+            <div class="services">
+                <i class="fa-brands fa-java"></i>
+                <h2>JAVA</h2>
+                <p>Java is a programming language</p>
+            </div>
+            <div class="services">
+                <i class="fa-brands fa-python"></i>
+                <h2>Python</h2>
+                <p>Python is a programming language</p>
+            </div>
+            <div class="services">
+                <i class="fa-solid fa-c"></i>
+                <h2>C++</h2>
+                <p>C++ is a programming language</p>
+            </div>
+            <div class="services">
+                <i class="fa-solid fa-bullhorn"></i>
+                <h2>Marketing</h2>
+                <p>Coming Soon</p>
+            </div>
+            <div class="services">
+                <i class="fa-solid fa-chart-line"></i>
+                <h2>Chart</h2>
+                <p>Coming Soon</p>
+            </div>
+            <div class="services">
+                <i class="fa-solid fa-mobile-screen-button"></i>
+                <h2>App Development</h2>
+                <p>Coming Soon</p>
+            </div>
+            <div class="services">
+                <i class="fa-solid fa-network-wired"></i>
+                <h2>Networking</h2>
+                <p>Coming Soon</p>
+            </div>
+            <div class="services">
+                <i class="fa-solid fa-database"></i>
+                <h2>Database</h2>
+                <p>Coming Soon</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

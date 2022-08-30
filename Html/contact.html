@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebRock.in:contact</title>
+    <link rel="shortcut icon" type="image" href="img/webrock.png">
+    <script src="https://kit.fontawesome.com/ae834503ac.js" crossorigin="anonymous"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        body {
+            background-size: cover;
+            background-color: rgba(0, 120, 10, 0.9);
+        }
+        
+        .contact {
+            position: absolute;
+            min-height: 100vh;
+            padding: 50px 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        
+        .icon i {
+            color: #000;
+        }
+        
+        .contact h2 {
+            color: #000;
+        }
+        
+        .contact p {
+            color: rgb(55, 3, 244);
+        }
+        
+        .contact .content {
+            max-width: 800px;
+            text-align: center;
+        }
+        
+        .contact .content h2 {
+            font-size: 36px;
+            font-weight: 500;
+            color: #000;
+        }
+        
+        .contact .content p {
+            font-weight: 300;
+            color: #000;
+        }
+        
+        .container-1 {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+            color: #000;
+        }
+        
+        .container-1 .contactInfo {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .container-1 .contactInfo .box {
+            position: relative;
+            padding: 20px 0;
+            display: flex;
+        }
+        
+        .container-1 .contactInfo .box .icon {
+            min-width: 60px;
+            height: 60px;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            font-size: 22px;
+            align-items: center;
+        }
+        
+        .container-1 .contactInfo .box .text {
+            display: flex;
+            margin-left: 20px;
+            font-size: 16px;
+            color: #fff;
+            flex-direction: column;
+            font-weight: 300;
+        }
+        
+        .container-1 .contactInfo .box .text h3 {
+            font-weight: 500;
+            color: #00bcd4;
+        }
+        
+        .contactForm {
+            width: 40%;
+            padding: 40px;
+            background: #fff;
+        }
+        
+        .contactForm h2 {
+            font-size: 30px;
+            color: #333;
+            font-weight: 500;
+        }
+        
+        .contactForm .inputBox {
+            position: relative;
+            width: 100%;
+            margin-top: 10px;
+        }
+        
+        .contactForm .inputBox input,
+        textarea {
+            width: 100%;
+            padding: 5px 0;
+            font-size: 16px;
+            margin: 10px 0;
+            border: none;
+            border-bottom: 2px solid #333;
+            outline: none;
+            resize: none;
+        }
+        
+        .contactForm .inputBox span {
+            position: absolute;
+            left: 0;
+            padding: 5px 0;
+            font-size: 16px;
+            margin: 10px 0;
+            pointer-events: none;
+            transition: 0.5s;
+            color: #666;
+        }
+        
+        .contactForm .inputBox input:focus~span,
+        .contactForm .inputBox input:valid~span,
+        .contactForm .inputBox textarea:focus~span,
+        .contactForm .inputBox textarea:valid~span {
+            color: #e91e63;
+            font-size: 12px;
+            transform: translateY(-20px);
+        }
+        
+        .contactForm .inputBox input[type="submit"] {
+            width: 100px;
+            background: #00bcd4;
+            color: none;
+            cursor: pointer;
+            padding: 10px;
+            font-size: 18px;
+            transition: all 0.4s ease;
+        }
+        
+        .contactForm .inputBox input[type="submit"]:hover {
+            background-color: rgb(240, 171, 12);
+        }
+        
+        @media (max-width:991px) {
+            .contact {
+                padding: 50px;
+            }
+            .container-1 {
+                flex-direction: column;
+            }
+            .container-1 .contactInfo {
+                margin-bottom: 40px;
+            }
+            .container-1 .contactInfo,
+            .contactForm {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section class="contact">
+        <div class="content">
+            <h2>Contact Us</h2>
+            <p>Contact us if Any Knowledge Required. If I possible I will help you. If any update wanted please contact me.I will help you </p>
+
+        </div>
+        <div class="container-1">
+            <div class="contactInfo">
+                <div class="box">
+                    <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+                    <div class="text">
+                        <h3>Address</h3>
+                        <p>110 jiddi galli Hire Bagewadi,Rehmat nagar Belagavi 591109</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa-solid fa-phone"></i></div>
+                    <div class="text">
+                        <h3>Phone</h3>
+                        <p>+91 6362196902</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+                    <div class="text">
+                        <h3>Email</h3>
+                        <p>webrock6141@gmail.com</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="icon"><i class="fa-solid fa-building-columns"></i></div>
+                    <div class="text">
+                        <h3>College</h3>
+                        <p>Angadi Institute of Techonology and Management</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contactForm">
+                <form onsubmit="sendEmail(); reset(); return false;">
+                    <h2>Send Message</h2>
+                    <div class="inputBox">
+
+                        <input type="text" name="" required="required">
+                        <span>Full Name</span>
+
+                    </div>
+                    <div class="inputBox">
+
+                        <input type="text" name="" required="required">
+                        <span>Email</span>
+
+                    </div>
+                    <div class="inputBox">
+
+                        <textarea required="required"></textarea>
+                        <span>Type your Query...</span>
+
+                    </div>
+                    <div class="inputBox">
+                        <a href="mailto:supportwebrock6141@gmail.com"><input type="submit" name="Send" value="Send"></a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://smtpjs.com/v3/smtp.js">
+    </script>
+    <script>
+        function sendEmail() {
+            mail.send({
+                Host: "smtp.gmail.com",
+                Username: "webroc6141@gmail.com",
+                Password: "WebRock@1234",
+                To: 'mohammadkaifdevalapur68@gmail.com.com',
+                From: document.getElementById("email").value,
+                Subject: "New Contact Form Enquery",
+                Body: "And this is the body"
+            }).then(
+                message => alert(message)
+            );
+        }
+    </script>
+
+</body>
+
+</html>

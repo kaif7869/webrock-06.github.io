@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebRock</title>
+    <link rel="shortcut icon" type="image" href="img/webrock.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+        
+        .header {
+            height: 100vh;
+        }
+        
+        .navbar-style {
+            box-shadow: 0 5px 10px orange;
+        }
+        
+        .logo {
+            height: 48px;
+            padding: 2px 10px;
+        }
+        
+        .logo img {
+            display: block;
+            position: fixed;
+        }
+        
+        .icon-bar {
+            background: darkorange;
+        }
+        
+        .icon-bar,
+        img {
+            float: right;
+        }
+        
+        li a {
+            color: #333;
+            font-size: 15px;
+            font-weight: 50;
+        }
+        
+        #menuToggle {
+            display: block;
+            position: absolute;
+            top: 15px;
+            right: 50px;
+            z-index: 1;
+            -webkit-user-select: none;
+            user-select: none;
+        }
+        
+        #menuToggle input {
+            display: block;
+            width: 40px;
+            height: 32px;
+            position: absolute;
+            top: -7px;
+            left: -5px;
+            cursor: pointer;
+            opacity: 0;
+            /* hide this */
+            z-index: 2;
+            /* and place it over the hamburger */
+            -webkit-touch-callout: none;
+        }
+        /*
+ * Just a quick hamburger
+ */
+        
+        #menuToggle span {
+            display: block;
+            width: 33px;
+            height: 4px;
+            margin-bottom: 5px;
+            position: relative;
+            background: black;
+            border-radius: 3px;
+            z-index: 1;
+            transform-origin: 4px 0px;
+            transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0), opacity 0.55s ease;
+        }
+        
+        #menuToggle span:first-child {
+            transform-origin: 0% 0%;
+        }
+        
+        #menuToggle span:nth-last-child(2) {
+            transform-origin: 0% 100%;
+        }
+        /* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+        
+        #menuToggle input:checked~span {
+            opacity: 1;
+            transform: rotate(45deg) translate(-2px, -1px);
+            background: #232323;
+        }
+        /*
+ * But let's hide the middle one.
+ */
+        
+        #menuToggle input:checked~span:nth-last-child(3) {
+            opacity: 0;
+            transform: rotate(0deg) scale(0.2, 0.2);
+        }
+        /*
+ * Ohyeah and the last one should go the other direction
+ */
+        
+        #menuToggle input:checked~span:nth-last-child(2) {
+            opacity: 1;
+            transform: rotate(-45deg) translate(0, -1px);
+        }
+        
+        .navbar-nav {
+            padding: 0 25px;
+        }
+        
+        .text h1 {
+            padding-left: 20px;
+            padding-bottom: 25px;
+            font-family: Arial;
+            letter-spacing: 1.5px;
+            line-height: 30px;
+        }
+        
+        h1 {
+            color: blue;
+        }
+        
+        .text span {
+            color: darkorange;
+        }
+        
+        p {
+            font-size: 17px;
+            letter-spacing: 1.5px;
+        }
+        
+        .cn {
+            width: 160px;
+            height: 40px;
+            margin-left: 18px;
+            background: #ff7200;
+            border: none;
+            margin-bottom: 10px;
+            margin-left: 20px;
+            font-size: 18px;
+            border-radius: 15px;
+            cursor: pointer;
+            transition: .4s ease;
+        }
+        
+        .cn a {
+            text-decoration: none;
+            color: #000;
+            transition: 0.3s ease;
+        }
+        
+        .cn:hover {
+            background-color: #efefef;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="navbar navbar-style">
+            <div class="container">
+                <div class="navbar-header">
+                    <img src="img/webrock.png" alt="" class="logo" style="position: fixed;">
+                    <button type="button" class="nav-toggle" data-toggle="collapse" data-target="#micon">
+                        <nav role='navigation'>
+                            <div id="menuToggle">
+                              <!--
+                              A fake / hidden checkbox is used as click reciever,
+                              so you can use the :checked selector on it.
+                              -->
+                              <input type="checkbox" />
+                              
+                              <!--
+                              Some spans to act as a hamburger.
+                              
+                              They are acting like a real hamburger,
+                              not that McDonalds stuff.
+                              -->
+                              <span></span>
+                              <span></span>
+                              <span></span>
+                              
+                              <!--
+                              Too bad the menu has to be inside of the button
+                              but hey, it's pure CSS magic.
+                              -->
+                              
+                    </button>
+
+                </div>
+                <div class="collapse navbar-collapse" id="micon">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./login.html">Course</a></li>
+                        <li><a href="./ABOUT.html">About</a></li>
+                        <li><a href="./services.html">Services</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6">
+                    <h1 class="text">Web Design & <br> <span>Development</span><br>Course</h1>
+                    <p>
+                        <b>Web Development</b> is the work involved in developing a website for the internet(a private network).<br>Web development can range from developing a simple single static page of plane text to<br> complex web application, electronic
+                        businesses, and social network services.<br> web design, web contnt development, client liaison,<br> client-side/server-side scripting, web server and network security configuration, and e-commerce development.<br>
+                    </p>
+                </div>
+                <div class="col-sm-6">
+                    <img src="img/bg1.png" class="img-responsive">
+
+                    <button class="cn"><a href="./JOIN US.html">JOIN US</a></button>
+                </div>
+            </div>
+        </div>
+
+    </header>
+
+</body>
+
+</html>
